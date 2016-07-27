@@ -1,0 +1,122 @@
+.colorfulai-display{
+	width: 100%;
+	margin: 50px auto 30px auto;
+	display: none;
+}
+.colorfulai-list{
+	width: 70%;
+	margin: 0 auto;
+}
+.colorfulai-list:before,.colorfulai-list:after{
+	display: table;
+	clear: both;
+	content: "";
+}
+.colorfulai-list-item{
+	width: 15%;
+	margin: 0 2.5% 44px 2.5%;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+.colorfulai-item-img{
+	width: 100%;
+	max-width: 60px;
+	margin: 0 auto;
+}
+.colorfulai-item-name{
+	font-size: 14px;
+	color: #000;
+	margin: 16px auto;
+	white-space: nowrap;
+	text-align: center;
+}
+.QR-code{
+	width: 166px;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 0 0 8px rgba(144,142,142,0.5);
+	padding: 10px 20px 10px 20px;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 9999;
+	display: none;
+}
+.QR-code:before{
+	position: absolute;
+    left: 0px;
+    top: 20%;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-top: -12px;
+    border-style: solid none solid solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #fff;
+    z-index: 9999;
+}
+.QR-code:after{
+   content: "";
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   top: 20%;
+   left: -8px;
+   transform: rotate(45deg);
+   -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+   background: #fff;
+   box-shadow: 0 0 8px rgba(144,142,142,0.5);
+   z-index: -1;
+}
+.QRcode-box{
+	width: 100%;
+}
+.download-tips{
+	font-size: 12px;
+	margin-top: 8px;	
+	display: block;
+}
+.QR-popbox{
+	width: 250px;
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+	margin-left: -125px;
+}
+.QR-pop-img{
+	width: 100%;
+}
+.QR-pop-name{
+	font-size: 14px;
+	color: #333;
+	margin: 10px auto;
+	display: block;
+}
+.QR-care-tips{
+	font-size: 10px;
+	color: #747474;
+	display: block;
+}
+@media (max-width: 1024px) {
+	.colorfulai-list-item{ width: 20%;}
+	.colorfulai-item-img{ max-width: 50px;}
+	.QR-code{ width: 148px;}
+}
+@media (max-width: 960px) {
+	.colorfulai-list-item{ width: 28.3%;}
+	.QR-code{ width: 128px; left: 90%; box-shadow: 0 0 4px rgba(144,142,142,0.5);}
+	.QR-code:after{box-shadow: 0 0 2px #908E8E;}
+}
+@media (max-width: 768px) {
+	.colorfulai-list-item{ width: 40%;}
+	.QR-code{left: 80%; box-shadow: 0 0 2px #908E8E; padding: 10px;}
+	.download-tips{ font-size: 10px;}
+	.colorfulai-item-name{ font-size: 10px;}
+	.QR-code:before{ border-width: 10px 0 10px 10px; margin-top: -5px;}
+	.QR-code:after{ width: 10px; height: 10px; left: -5px;box-shadow: 0 0 4px rgba(144,142,142,0.5);}
+}
+@media (max-width: 480px) {
+	.colorfulai-list-item{ width: 60%;margin: 0 20% 44px 20%;}
+	.QR-code{ width: 108px; left: 95 %;};}

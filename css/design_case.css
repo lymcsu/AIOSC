@@ -1,0 +1,53 @@
+.case-display{
+	margin: 70px auto 20px auto;
+	width: 100%;
+	display: none;
+}
+.case-list{
+	width: 90%;
+	margin:  0 auto;
+}
+.case-list:before,.case-list:after{
+	display: table;
+	clear: both;
+	content: "";
+}
+.case-list-item{
+	width: 30%;
+	margin: 0 1.66% 3.3% 1.66%;
+}
+.case-list-item-img{
+	width: 100%;
+	display: block;
+}
+.case-list-item-source{
+	width: 100%;
+	padding: 17px;
+	overflow: hidden;
+}
+.case-maker-pic{
+	width: 42px;
+	height: 42px;
+	float: left;
+	margin-right: 20px;
+}
+.case-maker-info{
+	font-size: 12px;
+	color: #505050;
+	float: left;
+}
+.case-maker-title{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 4px;
+}
+.case-maker-time{
+	margin-left: 20px;
+}
+@media (max-width: 768px) {
+	.case-list-item{ width: 45%; margin: 0 2.5% 5% 2.5%;}
+}
+@media (max-width: 480px) {
+	.case-list-item{ width: 90%; margin: 0 5% 10% 5%;}
+}

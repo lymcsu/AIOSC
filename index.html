@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页 - 亚信开源社区</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<!--[if lt IE 9]>
+    		<script src="plugins/html5shiv-3.7.2/html5shiv.min.js"></script>
+    		<script src="plugins/respond.js-1.4.2/respond.min.js"></script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<header class="top-navbar" id="J_indexTopNavbar">
+			<div class="navbar-box">
+				<div class="navbar-left">
+					<a class="navbar-logo" href="#">AIOSC</a>
+				</div>
+				<div class="navbar-right">
+					<ul class="navbar-list">
+						<li >
+							<a class="nav-active" href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="product_community.html">社区产品</a>
+						</li>
+						<li>
+							<a href="design_case.html">设计案例</a>
+						</li>
+						<li>
+							<a href="colorful_ai.html">多彩亚信</a>
+						</li>
+						<li>
+							<a href="community_bbs.html">社区论坛</a>
+						</li>
+						<li class="divider">|</li>
+						<li>
+							<a id="J_to_login" href="javascript:;">登录</a>
+						</li>
+						<li>
+							<a id="J_to_register" href="javascript:;">注册</a>
+						</li>
+						<li class="user-menu">
+							<a href="javascript:;" id="J_user_dropdownMenu"><img src="img/user_pic.jpg" class="user-menu-img" alt="">HuChang</a>
+							<ul class="user-menu-list dropdown-menu">
+								<li class="user-menu-item">
+									<a href="#">修改资料</a>
+								</li>
+								<li class="user-menu-divider"></li>
+								<li class="user-menu-item">
+									<a href="#">退出登录</a>
+								</li>
+							</ul>
+						</li>
+						<li class="user-logout">
+							<a href="javascript:;">退出登录</a>
+						</li>
+					</ul>
+					<div class="side-btn">
+         				<i class="iconfont icon-unif021" style="font-size: 18px;"></i>
+        			</div>
+				</div>
+			</div>
+		</header>
+		<div class="content-box index-content">
+			<!-- banner -->
+			<div class="index-banner" id="J_indexBanner">
+				<div class="index-banner-inner">
+					<h3 class="index-banner-title">Welcome to</h3>
+					<p class="index-banner-intro">“Asianinfo Open Source Community”</p>
+					<p>截止目前 ! 我们有<span class="index-banner-number">124</span>个开源社区产品<span class="index-banner-number">1100</span>名热爱开源社区开发者</p>
+					<a href="#" class="index-banner-joinbtn">立即加入</a>
+				</div>
+				<a href="javascript:;" class="index-banner-downbtn" id="J_indexDownBtn"><i class="iconfont icon-arrow"></i></a>
+			</div>
+
+			<!-- 底屏 -->
+			<div class="index-feature">
+				<div class="index-feature-inner">
+					<div class="index-feature-header">
+						<h3 class="index-feature-title">开源社区特性</h3>
+						<i class="index-feature-decorate-line"></i>
+						<p class="index-feature-title-eng">Open Source Community Characteristics</p>
+					</div>
+					<div class="index-feature-list">
+						<div class="index-feature-box">
+							<div class="index-feature-item">
+								<i class="index-feature-item-icon icon-code"></i>
+								<strong class="index-feature-item-title">代码共享</strong>
+								<p class="index-feature-item-intro">承载核心技术平台产品，实现核心技术平台代码级开源共享，降低开发成本，缩短开发时间。</p>
+							</div>
+						</div>
+						<div class="index-feature-box">
+							<div class="index-feature-item">
+								<i class="index-feature-item-icon icon-evolution"></i>
+								<strong class="index-feature-item-title">自我演进</strong>
+								<p class="index-feature-item-intro">聚合公司内各类专家资源，实现产品信息的集中管控与问题跟踪，推动产品的自我演进。</p>
+							</div>
+						</div>
+						<div class="index-feature-box">
+							<div class="index-feature-item">
+								<i class="index-feature-item-icon icon-communication"></i>
+								<strong class="index-feature-item-title">经验交流</strong>
+								<p class="index-feature-item-intro">建立起经验分享与问题交流的渠道，为开发人员的自我提升提供更多的途径。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登录框-->
+		<div class="user-login pop-box">
+			<div class="decoration-line"></div>
+			<h3 class="login-title">登录</h3>
+			<i class="login-closebtn iconfont icon-close"></i>
+			<input id="J_user_name" type="text" class="login-input" placeholder="账号"/>
+			<input id="J_user_password" type="password" class="login-input" placeholder="密码"/>
+			<div id="J_login" class="login-input login-btn">登录</div>
+			<div class="login-links">
+				<a href="javascript:;" class="link-registe">注册</a>
+				<a href="javascript:;" class="link-forgetpass">忘记密码</a>
+			</div>
+		</div>
+		<!--注册框-->
+		<div class="user-register pop-box">
+			<div class="decoration-line"></div>
+			<h3 class="login-title">注册</h3>
+			<i class="login-closebtn iconfont icon-close"></i>
+			<input type="text" class="login-input login-username" placeholder="邮箱"/>
+			<input type="password" class="login-input code-input" placeholder="验证码"/>
+			<div id="J_sendcode" class="send-code">发送</div>
+			<div id="J_register" class="login-input login-btn">下一步</div>
+			<div class="login-links">
+				<a href="javascript:;" class="link-login">登录</a>
+				<a href="javascript:;" class="link-forgetpass">忘记密码</a>
+			</div>
+		</div>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/index.js" ></script>
+	<script src="js/common.js"></script>
+	</body>
+
+</html>

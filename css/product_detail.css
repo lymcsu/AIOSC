@@ -1,0 +1,97 @@
+body{
+	background-color: #F4F4F4;
+}
+.main-detail-content{
+	width: 86%;
+	margin: 100px 7%;
+	overflow: hidden;
+}
+.product-detail-info{
+	width: 20%;
+	float: left;
+}
+.product-detail-head{
+	height: 234px;
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+.product-detail-head-name{
+	font-size: 14px;
+	color: #000;
+	display: block;
+	margin: 8px 0;
+}
+.product-btn{
+	width: 110px;
+	height: 30px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+.product-joinbtn{
+	background-color: rgb(63,63,63);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #ddd;
+}
+.product-version{
+	margin: 12px auto;
+	border: 1px solid #dfdfdf;
+	line-height: 28px;
+	color: #666;
+}
+.product-detail-catalog{
+	height: 350px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+.product-detail-intro{
+	width: 76%;
+	height: 1134px;
+	float: right;
+	background-color: #fff;
+	padding: 30px;
+}
+.product-catalog-list{
+	width: 100%;
+}
+.product-catalog-item{
+	width: 100%;
+	background-color: #B7B7B7;
+	height: 50px;
+	line-height: 50px;
+}
+.product-catalog-item > a{
+	width: 98%;
+	float: right;
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+}
+.catalog-active{
+	background-color: rgb(63,63,63);
+}
+.product-detail-banner{
+	width: 100%;
+	max-width: 848px;
+}
+.product-detail-intro-list{
+	padding: 40px 60px;
+	color: #00CD66;
+	list-style: disc !important;
+}
+.product-detail-intro-item{
+}
+.product-detail-intro-item-title{
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+.product-detail-intro-item-content{
+	color: #3F3F3F;
+	font-size: 14px;
+	margin: 15px 0;
+	line-height: 24px;
+}

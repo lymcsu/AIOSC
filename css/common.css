@@ -1,0 +1,515 @@
+html,
+body {
+	height: 100%;
+}
+
+
+/*头部导航栏*/
+
+.top-navbar {
+	width: 100%;
+	/*height: 50px;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	-webkit-transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.side-btn {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+.top-navbar-black {
+	background: rgba(63, 63, 63, 1) !important;
+	background: #3F3F3F \9;
+}
+
+.navbar-box {
+	line-height: 50px;
+	overflow: hidden;
+}
+
+.navbar-left {
+	padding: 0 32px;
+	font-size: 22px;
+	float: left;
+}
+
+.navbar-logo {
+	padding: 10px 0;
+	color: #fff;
+}
+
+.navbar-right {
+	padding: 0 15px 0 0;
+	font-size: 14px;
+	float: right;
+}
+
+.navbar-list {
+	overflow: hidden;
+}
+
+.navbar-list> li {
+	height: 50px;
+	float: left;
+	color: #fff;
+}
+
+.navbar-list> li> a {
+	color: #fff;
+	padding: 15px;
+}
+
+.navbar-list> li> a:hover {
+	color: #71ECF1;
+}
+
+.user-menu-img {
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.divider {
+	padding: 0 10px;
+}
+
+.user-logout {
+	display: none;
+}
+
+.nav-active {
+	color: #71ECF1 !important;
+}
+
+.user-menu-list {
+	width: 128px;
+	height: 90px;
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	border-radius: 0 0 4px 4px;
+	top: 50px;
+	box-shadow: 0 0 4px #ACACAC;
+}
+
+.user-menu-list:before {
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	content: '';
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	border-style: none solid solid;
+	border-width: 0 8px 8px;
+	border-color: transparent transparent #fff;
+}
+
+.dropdown-menu {
+	display: none;
+	position: fixed;
+}
+
+.user-menu-item {
+	padding: 13px 36px;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.user-menu-divider {
+	height: 1px;
+	background-color: #E8E8E8;
+	margin: 0 10px;
+}
+
+.user-menu-item a {
+	color: #4A4A4A;
+	padding: 0;
+}
+/*登录框*/
+.user-login,.user-register{
+	width: 360px;
+	background-color: #fff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -180px;
+	margin-top: -150px;
+	box-shadow: 0 2px 4px rgba(96,96,96,0.5);
+	border-top: 1px solid #fff;
+	text-align: center;
+	display: none;
+}
+.decoration-line{
+	height: 1px;
+	margin: 44px 34px;
+	background-color: #ccc;
+}
+.login-title{
+	font-size: 22px;
+	color: #3C3C3C;
+	width: 80px;
+	background-color: #fff;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -40px;
+}
+.login-input{
+	width: 290px;
+	height: 46px;
+	line-height: 46px;
+	margin-bottom: 16px;
+	border: 1px soild #B3B3B3;
+	font-size: 16px;
+	color: #3F3F3F;
+}
+.login-btn{
+	border: none;
+	display: inline-block;
+	background-color: #3F3F3F;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.login-links{
+	display: inline-block;
+	width: 290px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.link-registe,.link-login{
+	color: #9A9A9A;
+	float: left;
+}
+.link-forgetpass{
+	color: #9A9A9A;
+	float: right;
+}
+.login-closebtn{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	cursor: pointer;
+}
+.code-input{
+	width: 192px;
+	display: inline-block;
+	vertical-align: top;
+}
+.send-code{
+	width: 82px;
+	height: 46px;
+	margin-left: 12px;
+	background-color: #909090;
+	color: #fff;
+	line-height: 46px;
+	display: inline-block;
+}
+/*登录注册框适配*/
+@media (max-width: 480px){
+	.user-login,.user-register{ width: 300px; margin-left: -150px;}
+	.decoration-line{ margin: 34px 34px;}
+	.login-title{ font-size: 18px; width: 60px; margin-left: -30px;}
+	.login-input{ width: 240px; height: 36px; line-height: 36px; }
+	.login-links{ width: 240px;}
+	.code-input{ width: 162px;}
+	.send-code{ margin-left: 12px; height: 36px; line-height: 36px; width: 62px;}
+}
+/*头部导航适配*/
+
+@media (max-width:768px) {
+	.top-navbar {
+		background: rgba(63, 63, 63, .9);
+		background: #3F3F3F \9;
+	}
+	.navbar-right {
+		float: none;
+		width: 100%;
+		padding: 0;
+		position: relative;
+	}
+	.navbar-list {
+		width: 100%;
+		padding: 0 0 20px 0;
+		display: none;
+	}
+	.navbar-list> li {
+		width: 100%;
+		float: none;
+		display: block;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+	}
+	.navbar-list > li > a {
+		padding: 0;
+	}
+	.navbar-list> li > a:hover{
+		width: 55%;
+		display: inline-block;
+		line-height: 31px;
+		border: 2px solid #fff;
+		color: #fff;
+	}
+	.divider {
+		display: none !important;
+	}
+	.user-menu-img {
+		display: none;
+	}
+	.user-menu> a{ 
+		color: #333 !important; 
+	}
+	.navbar-left {
+		padding: 0 15px;
+	}
+	.side-btn {
+		display: block;
+	}
+	.user-menu> a {
+		display: inline-block;
+		line-height: 31px;
+		width: 55%;
+		background-color: #fff;
+		color: #333 !important;
+	}
+	.user-menu-list {
+		display: none !important;
+	}
+	.user-logout> a {
+		display: inline-block;
+		line-height: 31px;
+		width: 55%;
+		background-color: #d45a5a;
+	}
+	.nav-active {
+		width: 55%;
+		display: inline-block;
+		line-height: 31px;
+		border: 2px solid #fff;
+		color: #fff !important;
+	}
+}
+
+.content-box {
+	padding-top: 50px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+
+/*选项卡*/
+
+.tab-bar {
+	width: 100%;
+	text-align: center;
+	margin-top: 48px;
+}
+
+.tab-bar-list {
+	font-size: 0;
+}
+
+.tab-bar-list> li {
+	padding: 10px 0;
+	display: inline-block;
+	margin: 0 28px;
+}
+
+.tab-bar-list> li> a {
+	padding: 6px 20px;
+	color: #747474;
+	font-size: 16px;
+	transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-webkit-transition: background .2s ease-in-out;
+	;
+}
+
+.tab-bar-list> li.tab-active> a,
+.tab-bar-list> li> a:hover {
+	color: #fff;
+	background: #3F3F3F;
+}
+
+
+/*选项卡适配*/
+
+@media (max-width: 768px) {
+	.tab-bar-list> li {
+		margin: 0 10px;
+	}
+	.tab-bar-list> li> a {
+		font-size: 14px;
+		padding: 6px 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.tab-bar-list> li {
+		margin: 0 5px;
+	}
+	.tab-bar-list> li> a {
+		font-size: 12px;
+		padding: 6px 8px;
+	}
+}
+
+.side-feedback {
+	width: 28px;
+	height: 60px;
+	position: fixed;
+	right: 0;
+	top: 60%;
+	background-color: #3F3F3F;
+	text-align: center;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.feedback-btn {
+	width: 14px;
+	height: 36px;
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 4px;
+	line-height: 18px;
+}
+
+.slide-left-box {
+	width: 326px;
+	font-size: 14px;
+	background-color: #fff;
+	box-shadow: 0 2px 10px 1px #B1B1B1;
+	position: fixed;
+	right: -334px;
+	top: 60%;
+	margin-top: -215px;
+}
+
+.slide-left-head {
+	width: 100%;
+	height: 76px;
+	padding-left: 20px;
+	line-height: 76px;
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+	background-color: #3F3F3F;
+	box-shadow: inset 0 1px 3px #000;
+	position: relative;
+}
+
+.slide-close {
+	position: absolute;
+	line-height: 10px;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.slide-left-content {
+	padding: 18px 18px 48px 18px;
+	text-align: left;
+	color: #4F4F4F;
+}
+
+.slide-left-tips {
+	line-height: 20px;
+}
+
+.feedback-email {
+	color: #4F4F4F;
+	width: 288px;
+	height: 38px;
+	border: 1px solid #BDBDBD;
+	margin-top: 18px;
+	padding: 10px 0 10px 20px;
+}
+
+.feedback-message {
+	color: #4F4F4F;
+	height: 100px;
+	width: 288px;
+	border: 1px solid #BDBDBD;
+	margin-top: 16px;
+	padding: 10px 0 10px 20px;
+}
+
+.slide-left-submit-btn {
+	margin-top: 16px;
+	width: 288px;
+	height: 38px;
+	line-height: 38px;
+	background-color: #3F3F3F;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.slide-left-submit-btn:active {
+	background-color: #2F2F2F;
+}
+/*意见反馈适配*/
+@media (max-width: 1024px){
+	.slide-left-box{ width: 246px;}
+	.slide-left-head{ height: 46px; line-height: 46px;}
+	.feedback-email{ width: 208px;}
+	.feedback-message{ width: 208px;}
+	.slide-left-submit-btn{ width: 208px;}
+}
+
+.list-item {
+	margin: 0 16px 30px 16px;
+	box-shadow: 0 1px 3px #CDCDCD;
+	float: left;
+	cursor: pointer;
+}
+
+.list-item:hover {
+	box-shadow: 0 1px 12px 4px #A2A2A2;
+}
+
+.display-active {
+	display: block !important;
+}
+
+.cover-img {
+	width: 100%;
+}
+
+.pop-box {
+	z-index: 9999999;
+	margin-bottom: 3px;
+	display: none;
+	box-shadow: 0 0 4px #A2A2A2;
+	top: 50%;
+	left: 50%;
+}
+
+#bg-modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: #000;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+	display: none;
+}

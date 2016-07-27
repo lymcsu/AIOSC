@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>案例详情</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="css/reset.css" />
+  		<link rel="stylesheet" href="css/common.css" />
+  		<link rel="stylesheet" href="css/iconfont.css" />
+  		<link rel="stylesheet" href="css/case_detail.css" />
+  		<!--[if lt IE 9]>
+    		<script src="plugins/html5shiv-3.7.2/html5shiv.min.js"></script>
+    		<script src="plugins/respond.js-1.4.2/respond.min.js"></script>
+ 		<![endif]-->
+	</head>
+	<body>
+		<header class="top-navbar top-navbar-black" id="J_indexTopNavbar">
+			<div class="navbar-box">
+				<div class="navbar-left">
+					<a class="navbar-logo" href="#">AIOSC</a>
+				</div>
+				<div class="navbar-right" id="">
+					<ul class="navbar-list">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="product_community.html">社区产品</a>
+						</li>
+						<li>
+							<a class="nav-active" href="design_case.html">设计案例</a>
+						</li>
+						<li>
+							<a href="colorful_ai.html">多彩亚信</a>
+						</li>
+						<li>
+							<a href="community_bbs.html">社区论坛</a>
+						</li>
+						<li class="divider">|</li>
+						<!--<li>
+							<a href="javascript:;">登录</a>
+						</li>
+						<li>
+							<a href="javascript:;">注册</a>
+						</li>-->
+						<li class="user-menu">
+							<a href="javascript:;" id="J_user_dropdownMenu"><img src="img/user_pic.jpg" class="user-menu-img" alt="">HuChang</a>
+							<ul class="user-menu-list dropdown-menu">
+								<li class="user-menu-item">
+									<a href="#">修改资料</a>
+								</li>
+								<li class="user-menu-divider"></li>
+								<li class="user-menu-item">
+									<a href="#">退出登录</a>
+								</li>
+							</ul>
+						</li>
+						<li class="user-logout">
+							<a href="javascript:;">退出登录</a>
+						</li>
+					</ul>
+					<div class="side-btn">
+         				<i class="iconfont icon-unif021" style="font-size: 18px;"></i>
+        			</div>
+				</div>
+			</div>
+		</header>
+		<div class="content-box">
+			<div class="case-detail-box">
+				<div class="case-detail-head">
+					<div class="case-detail-head-img">
+						<img class="cover-img" src="img/设计案例详情页面头像.png" />
+					</div>
+					<div class="case-detail-head-info">
+						<div class="case-detail-head-title">开源社区</div>
+						<div class="case-detail-head-userinfo">
+							<span class="case-detail-head-username">机智的射鸡师</span>
+							<span class="case-detail-head-time">2016年5月12日</span>
+						</div>
+					</div>
+				</div>
+				<div class="case-detail-info-img">
+					<img src="img/设计案例图.png" class="cover-img" alt="case-detail"/>
+				</div>
+			</div>
+		</div>
+		<!--意见反馈侧滑-->
+		<div class="side-feedback">
+			<div class="feedback-btn">反馈<i class="iconfont icon-icon" style="font-size: 12px"></i></div>
+		</div>
+		<div class="slide-left-box">
+			<div class="slide-left-head">
+				给我们留言
+				<i class="iconfont icon-arrow slide-close"></i>
+			</div>
+			<div class="slide-left-content">
+				<p class="slide-left-tips">您好，感谢您来到开源社区，请问有什么想对我们说的吗 : )</p>
+				<input type="email" class="feedback-email" id="J_feedback_email" placeholder="邮箱" />
+				<textarea placeholder="留言" class="feedback-message" id="J_feedback_message"></textarea>
+				<div class="slide-left-submit-btn">提交</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
